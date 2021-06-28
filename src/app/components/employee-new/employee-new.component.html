@@ -1,0 +1,22 @@
+<div class="form-group">
+    <label for="empName">Name</label>
+    <input type="text" id="empName" [(ngModel)]="employeee.Name">
+    <label for="empAddress">Address</label>
+    <input type="text" id="empAddress" [(ngModel)]="employeee.Address">
+    <label for="empDept">Department</label>
+    <select [(ngModel)]="employeee.Dept">
+        <option *ngFor="let d of depts" [(ngValue)]="d.Id">{{d.Name}}</option>
+    </select>
+    <table>
+    <tr *ngFor="let empgr of empgroups">
+        <td></td>
+        <td>
+            <input type="radio" name="radiogroup" 
+                [checked]="idx === 1" 
+                [value]="empgr.id" 
+                (change)="onSelectionChange(empgr)">{{empgr.groupName}}
+        </td>
+    </tr>
+    </table>
+    <button type="button" (click)="saveData()">Save</button>
+</div>
