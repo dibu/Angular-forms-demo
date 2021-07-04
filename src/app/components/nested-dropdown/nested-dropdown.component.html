@@ -1,0 +1,20 @@
+<div> Select User: 
+    <select #mySelect (change)="onSelectionChange(mySelect.value)">
+        <option>Select User</option>
+        <option *ngFor="let u of mockuserList" 
+        [value]="u.id" 
+        >{{u.name}}</option>
+    </select>
+</div>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Title</td>
+        <td>UserId</td>
+    </tr>
+    <tr *ngFor="let t of mockuserTodoList">
+        <td>{{t.id}}</td>
+        <td>{{t.title}}</td>
+        <td>{{t.userId}}</td>
+    </tr>
+</table>

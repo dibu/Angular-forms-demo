@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getUserDetails().subscribe(r=> {
       this.userList = r['data'] as Array<UserModel>;
-      console.log('UserList :' + JSON.stringify(this.userList,null,3));
+     // console.log('UserList :' + JSON.stringify(this.userList,null,3));
     })
   }
 }

@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { EmployeeFormComponent } from './components/employee-form/employee-form.component';
 import { EmployeeNewComponent } from './components/employee-new/employee-new.component';
 import { UserTableComponent } from './components/user-table/user-table.component';
+import { NestedDropdownComponent } from './components/nested-dropdown/nested-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeFormComponent,
     EmployeeNewComponent,
-    UserTableComponent
+    UserTableComponent,
+    NestedDropdownComponent
   ],
   imports: [
     BrowserModule,
