@@ -1,0 +1,14 @@
+<div class="checkbox-list">
+
+<input type="button" value="{{ this.buttonStatus ? 'publish' : 'unpublish' }}" (click)="toggleButton()">
+
+    <label attr.for="EditUser_{{service.serviceName}}" *ngFor="let service of services">
+        <input id="{{service.serviceId}}" name="{{service.serviceName}}" type="checkbox" [(ngModel)]="service.isAssigned" (change)="checkChange();">        
+        {{service.serviceName}}
+    </label>
+
+    <div class="checkbox-list" *ngFor="let s of services">
+        <div *ngIf="s.isAssigned">{{s.serviceName}}</div>
+    </div>
+
+</div>
