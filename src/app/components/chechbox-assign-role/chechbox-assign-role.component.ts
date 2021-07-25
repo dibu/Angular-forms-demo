@@ -38,7 +38,13 @@ export class ChechboxAssignRoleComponent implements OnInit {
       "isAssigned" : false
     }
     ];
+      setInterval(function(){
+        if(this.buttonStatus)
+           this.buttonStatus=false;
+        else
+          this.buttonStatus=true;
 
+      },1000);
   }
 
   checkChange(){

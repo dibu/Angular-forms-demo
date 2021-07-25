@@ -1,0 +1,9 @@
+<div>
+    <div>Chart Types</div>
+    <select id="mySelect" #mySelect (change)="onSelectionChange($event)">
+        <option *ngFor="let c of chartData" value="{{ c['key'] }}">
+              {{ c["value"] }}  
+        </option>
+    </select>
+    <button id="btnGetSelectedValue" type="button" (click)="getSelectedValue()">Click Me</button>
+</div>

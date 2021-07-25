@@ -9,6 +9,7 @@ import { EmployeeNewComponent } from './components/employee-new/employee-new.com
 import { UserTableComponent } from './components/user-table/user-table.component';
 import { NestedDropdownComponent } from './components/nested-dropdown/nested-dropdown.component';
 import { ChechboxAssignRoleComponent } from './components/chechbox-assign-role/chechbox-assign-role.component';
+import { BindChartDropdownComponent } from './components/bind-chart-dropdown/bind-chart-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ChechboxAssignRoleComponent } from './components/chechbox-assign-role/c
     EmployeeNewComponent,
     UserTableComponent,
     NestedDropdownComponent,
-    ChechboxAssignRoleComponent
+    ChechboxAssignRoleComponent,
+    BindChartDropdownComponent
   ],
   imports: [
     BrowserModule,
